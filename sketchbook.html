@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+	<head>
+		<meta charset= "UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Viola Yu's Art Portfolio: Heart Subpage"
+			/>
+			<meta
+				name="keywords"
+				content="Viola Yu, Viola, Portfolio website, viola yu's portfolio, art portfolio website, biomedical communicator, biomedical visualizer"
+			/>
+			<meta name="author" content="Viola Yu" />
+			<link
+				href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+				rel="stylesheet"
+			/>
+			<link rel="stylesheet" href="index.css" />
+			<title> Viola's Portfolio- Heart </title> 
+		</head>
+		<body>
+<!--Contact Section, And Navigation and Footer-->
+<!--<nav class='padChild topHeader'>
+	<div class='flex-space-btw'>
+		<a class="centered logo"><img src="images/Yu_logo-01.svg" class="logo"></img></a>
+		<a href='mailto:vy33@cornell.edu' class='centered'>vy33@cornell.edu
+			<img src='images/linkIcon.svg' class='icon'></img></a>
+	</div>
+	</nav>-->
+
+    <!--sticky nav bar attempt-->
+
+    <div id="navbar">
+        <nav class='padChild header'>
+            <div class='flex-space-btw'>
+        <a class="centered logo"><img src="images/Yu_logo-01.svg" class="logo"></img></a>
+        <div class="header-right"> 
+            <a href="index.html" class='centered'>Home</a>
+            <a href="Portfolio subpage.html" class='centered'>Portfolio</a>
+        <a href="Resume subpage.html" class="centered">CV</a>
+        </div>
+    </div>
+    </div>
+        </nav>
+    </div>
+    </nav>
+<!--JavaScript for sticky nav bar-->
+
+<script>  
+  // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script> 
+
+<!--About Section-->
+<div class='container'>
+	<section class='grid2 aboutSection'>
+		<div class='centered'>
+            <div><img src="/images/Sketchbook_Skull.png" alt="Heart"  ></div>  
+	</div>
+    <div>
+        <h2>Sketchbook Pages</h2>
+        <p class='paragraph'> From life study of human skulls. 
+        </p>
+</div>  
+            <div>
+				<h2>Portraits</h2>
+				<p class='paragraph'> From life study of people's faces. 
+                </p>
+		</div>
+        <div><img src="/images/portraits sketch.jpg" alt="Heart Sketchbook"  ></div>
+
+        <div>
+            <h2>Tissue Study</h2>
+            <p class='paragraph'> Using electron microscopy images of skin and lungs to recreate tissue environments and 
+                study tissue structures. 
+               
+            </p>
+    </div> <div><img src="/images/skin and lungs sketch.jpg" alt="Heart Color Study"  ></div>
+        <div>
+            <h2> Pathology Layouts and Tissue Cube</h2>
+            <p class='paragraph'>Left page shows the exploration of different layouts for my pathology assignment (2 page spread
+                in Scientific American describing a pathology). Top two compositions for bubonic and septicemic plague. Bottom 
+                layout for ectopic pregnancy. Left page is tissue cube study done from histology of tubal ectopic pregnancy. With 
+                left cube showing normal fallopian tube, middle cube is ectopic pregnancy after 4 weeks and right tissue cube is 
+                ectopic pregnancy after 8 weeks. 
+            </p>
+    </div> <div><img src="/images/ectopic preg sketch.jpg" alt="Heart 3D Maquette" width="500px" ></div>
+        <div>
+            <h2> Hand study</h2>
+            <p class='paragraph'> Study of hand from life. 
+            </p>
+    </div> <div><img src="/images/reach hands sketch.jpg" alt="Heart WIP Gif"  ></div>
+</div>
+</section>
+</div> 
+</div>
+<!--Portfolio Section-->
+<div class='container portfolio-section'>
+    <section>
+        <h2>Portfolio</h2>
+        <div class='grid3'>
+            <a class='duplicateThisTag' href="heart subpage.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(images/Heart-01.png)'>
+                </div>
+            <h3 class="bold">A Look inside the Left Ventricle of the Human Heart</h3>
+            <p>
+                The goal of this illustration was to create an unique educational illustration
+                that informs the viewer of important external and internal anatomical features 
+                of the human heart.  
+            </p>
+            </a>
+        </div>
+    </section>
+</div>
+<!--Experience Section-->
+<div class='container experience-section'>
+    <section>
+        <h2>Experiences</h2>
+            <div class='flex-wrap'>
+                <div class='duplicateThisDiv'>
+                    <a href="#" class="accentColor bold">Microsoft
+                        <img src="images/linkIcon.svg" class="icon"></img>
+                    </a>
+                    <p>Write about </p>
+                    <p>2002-present</p>
+                </div>
+            <a href="Resume subpage.html" class="accentColor bold resume">View resume
+                <img src="images/linkIcon.svg" class="icon"></img></a>
+            </div>
+    </section>
+</div>
+<!--Footer-->
+<footer class='padChild topHeader'>
+	<div class='flex-space-btw'>
+		<a href='https://www.instagram.com/violayu.viz/' class='centered'><img src="images/Instagram-logo-transparent-PNG.png" class="icon"></img> <b>@violayu.viz</b></a>
+		<a href='mailto:vy33@cornell.edu' class='centered'>vy33@cornell.edu
+			<img src='images/linkIcon.svg' class='icon'></img></a>
+	</div>
+</footer>
+		</body>
+	</html>

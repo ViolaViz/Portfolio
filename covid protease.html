@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+	<head>
+		<meta charset= "UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Viola Yu's Art Portfolio: Heart Subpage"
+			/>
+			<meta
+				name="keywords"
+				content="Viola Yu, Viola, Portfolio website, viola yu's portfolio, art portfolio website, biomedical communicator, biomedical visualizer"
+			/>
+			<meta name="author" content="Viola Yu" />
+			<link
+				href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+				rel="stylesheet"
+			/>
+			<link rel="stylesheet" href="index.css" />
+			<title> Viola's Portfolio- Heart </title> 
+		</head>
+		<body>
+<!--Contact Section, And Navigation and Footer-->
+<!--<nav class='padChild topHeader'>
+	<div class='flex-space-btw'>
+		<a class="centered logo"><img src="images/Yu_logo-01.svg" class="logo"></img></a>
+		<a href='mailto:vy33@cornell.edu' class='centered'>vy33@cornell.edu
+			<img src='images/linkIcon.svg' class='icon'></img></a>
+	</div>
+	</nav>-->
+
+    <!--sticky nav bar attempt-->
+
+    <div id="navbar">
+        <nav class='padChild header'>
+            <div class='flex-space-btw'>
+        <a class="centered logo"><img src="images/Yu_logo-01.svg" class="logo"></img></a>
+        <div class="header-right"> 
+            <a href="index.html" class='centered'>Home</a>
+            <a href="Portfolio subpage.html" class='centered'>Portfolio</a>
+        <a href="Resume subpage.html" class="centered">CV</a>
+        </div>
+    </div>
+    </div>
+        </nav>
+    </div>
+    </nav>
+<!--JavaScript for sticky nav bar-->
+
+<script>  
+  // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script> 
+
+<!--About Section-->
+<div class='container'>
+	<section class='grid2 aboutSection'>
+		<div class='centered'>
+            <div><img src="/images/covid_protease.png" alt="Heart"  ></div>  
+	</div>
+    <div>
+        <h2>A Look Inside the Left Ventricle of the Human Heart</h2>
+        <p class='paragraph'> The goal of this illustration was to create an unique 
+            educational illustration that informs the viewer of important external and 
+            internal anatomical features of the human heart. 
+            <br><br>
+            Continue reading to learn about the process that went into creating this piece. 
+        </p>
+</div>  
+            <div>
+				<h2>Observational Sketches</h2>
+				<p class='paragraph'> The first step after research into the anatomical information, is to create 
+                    observational sketches. Top three sketches on the left page shows sketches done from life observing
+                    a human cadavear heart. With detail texture studies of trabeculae carneae and chordae tendineae. The 
+                    bottom heart on the left page is a study of a pig heart.
+                </p>
+		</div>
+        <div><img src="/images/covid_protease_sketch_layout.jpg" alt="Heart Sketchbook"  ></div>
+
+        <div>
+            <h2>Color Study</h2>
+            <p class='paragraph'> Graphite sketches while a good tool to explore the physical structures of the heart,
+                does not give any information on chroma. Therefore, I decided to do a color study of a pig heart done 
+                as a digital painting. This gave my important information such as color undertones. 
+               
+            </p>
+    </div> <div><img src="/images/PBD_covid_protease.png" alt="Heart Color Study"  ></div>
+        <div>
+            <h2> 3D Maquette</h2>
+            <p class='paragraph'>The next step was to use a 3D maquette to compose the final illustration. The parameters 
+                of the assignment was to create a cut view in the human body that is atypical. Therefore I used this 3D model
+                in Nomad Sculpt and created cut-outs with Boolean. After experimenting with different cuts, I settled on one 
+                that focused on the left ventricle. 
+            </p>
+    </div> <div><img src="/images/Covid protease sketch.png" alt="Heart 3D Maquette" width="500px" ></div>
+        <div>
+            <h2> Final Render</h2>
+            <p class='paragraph'> After exploring the physical structures of the heart, the coloration of the heart, and different 
+                cut-aways, the final render can start. With the physical structure of the heart being first rendered in black and white
+                then color is layed on top. 
+            </p>
+    </div> <div><img src="/images/covid_protease_hi_res.jpg" alt="Heart WIP Gif"  ></div>
+</div>
+</section>
+</div> 
+</div>
+<!--Portfolio Section-->
+<div class='container portfolio-section'>
+    <section>
+        <h2>Portfolio</h2>
+        <div class='grid3'>
+            <a class='duplicateThisTag' href="heart subpage.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(images/Heart-01.png)'>
+                </div>
+            <h3 class="bold">A Look inside the Left Ventricle of the Human Heart</h3>
+            <p>
+                The goal of this illustration was to create an unique educational illustration
+                that informs the viewer of important external and internal anatomical features 
+                of the human heart.  
+            </p>
+            </a>
+        </div>
+    </section>
+</div>
+<!--Experience Section-->
+<div class='container experience-section'>
+    <section>
+        <h2>Experiences</h2>
+            <div class='flex-wrap'>
+                <div class='duplicateThisDiv'>
+                    <a href="#" class="accentColor bold">Microsoft
+                        <img src="images/linkIcon.svg" class="icon"></img>
+                    </a>
+                    <p>Write about </p>
+                    <p>2002-present</p>
+                </div>
+            <a href="Resume subpage.html" class="accentColor bold resume">View resume
+                <img src="images/linkIcon.svg" class="icon"></img></a>
+            </div>
+    </section>
+</div>
+<!--Footer-->
+<footer class='padChild topHeader'>
+	<div class='flex-space-btw'>
+		<a href='https://www.instagram.com/violayu.viz/' class='centered'><img src="images/Instagram-logo-transparent-PNG.png" class="icon"></img> <b>@violayu.viz</b></a>
+		<a href='mailto:vy33@cornell.edu' class='centered'>vy33@cornell.edu
+			<img src='images/linkIcon.svg' class='icon'></img></a>
+	</div>
+</footer>
+		</body>
+	</html>

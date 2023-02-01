@@ -1,0 +1,314 @@
+*{
+	/* for all element */
+	box-sizing: border-box;
+}
+/* color theme and variables */
+:root {
+	--accentColor: #ad3869;
+	--headerColor: #444444;
+	--paragraphColor: #626262;
+	--ease: all 0.4s ease;
+	--radius: 6px;
+}
+
+body {
+		margin: 0;
+		padding: 0px;
+		font-family: "Quicksand", sans-serif;
+		color: var;(--headerColor);
+		padding: 0px 20 px;
+		background-color:ffffff #;
+}
+
+/*for all images */
+img {
+width: 100%;
+}
+
+/*for all icons */
+.icon {
+	width: 24px;
+	height: 24px;
+	margin: 0px 3px;
+}
+
+
+/*for all logos */
+.logo {
+    width: 250px;
+    height: 100px;
+    margin: 0px 30px;
+}
+
+/* to apply colors */
+.accentColor {
+	color: var(--accentColor);
+}
+.paragraph {
+	color: var(--paragraphColor);
+}
+
+a {
+	color: var(--headerColor);
+	/*remove default underling */
+	text-decoration: none;
+}
+
+/* to center elements */
+.centered {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* to center image */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* to group sections and add margins*/
+section{
+	margin: 150px 0px;
+}
+
+/* for background images */
+.backgroundFix {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+}
+
+/*to create total separation between elements */
+.flex-space-btw {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* to apply equal spacing between elements */
+.grid1 {
+  display: grid;
+  /*place in one*/
+  grid-template-columns:auto;
+  gap: 30px;
+}
+
+.grid2,
+.grid3 {
+	display: grid;
+	/* place in twos */
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
+}
+.grid3 {
+	/* place in three */
+	grid-template-columns: repeat(3, 1fr);
+}
+
+/* to create responsive in-line elements */
+.flex-wrap {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+/*wrap around elements and spce on both sides */
+.container {
+	width: 85%;
+	margin: auto;
+}
+
+.bold {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+/* for a fancy scroll bar */
+/* width */
+::-webkit-scrollbar {
+	width: 7px;
+	height: 7px;
+}
+
+/*scroll bar Track */
+::-webkit-scrollbar-track {
+	background:#f1f1f1;
+	border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--accentColor);
+	border-radius: 10px;
+}
+
+/*scroll bar Handle on hover */
+:: -webkit-scrollbar-thumb:hover {
+	background: var(--headerColor);
+}
+
+.padChild {
+	padding: 25px;
+}
+
+
+/*nav Section */
+
+@media (max-width: 500px) {
+	.topHeader .flex-space-btw {
+		display: block;
+		text-align: center;
+	}
+}
+
+/* Sticky Nav bar attempt */
+#navbar {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Navbar links */
+#navbar a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 10px;
+  }
+
+
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 0px 10px;
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    /*color: black;*/
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: rgb(245, 245, 245);
+    color: rgb(181, 37, 37);
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+
+
+
+
+/* About Section */
+.aboutSection .aboutImg {
+	height: 350px;
+	width: 60%;
+	margin-left: auto;
+	border-radius: 30px;
+}
+@media (max-width: 1000px) {
+	.aboutSection .aboutImg {
+		width: 80%;
+	}
+	@media (max-width: 800px) {
+		.aboutSection {
+			display: block;
+		}
+		.abboutSection .aboutImg {
+			display: none;
+		}
+	}
+}
+
+/*Experience Section */
+.experience-section .resume {
+    margin-top: 30px;
+    display: block;
+}
+
+/*Portfolio Section */
+.portfolio-section p {
+    font-size: 14px;
+}
+.portfolio-section .portfolio-image {
+    height: 250px;
+    width: 100%;
+}
+@media (max-width: 800px) {
+    .portfolio-section .grid3 {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 550px) {
+        .portfolio-section .grid3 {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+/*Footer Section */
+.topFooter .logo {
+	font-size: 18px;
+	font-weight: bold;
+}
+@media (max-width: 500px) {
+	.topFooter .flex-space-btw {
+		display: block;
+		text-align: center;
+	}
+}
