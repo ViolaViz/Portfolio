@@ -112,14 +112,75 @@ function myFunction() {
 </section>
 </div> 
 </div>
+<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+<script> filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    // Show filtered elements
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += " " + arr2[i];
+        }
+      }
+    }
+    
+    // Hide elements that are not selected
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1); 
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    // Add active class to the current control button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+
+<!-- Control buttons -->
+<div class="container portfolio-section"><h2><a href="Portfolio subpage.html">Portfolio</a></h2></div>
+<div class='container portfolio-section' id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('3D')"> 3D Work</button>
+    <button class="btn" onclick="filterSelection('Interactive')"> Interactive</button>
+    <button class="btn" onclick="filterSelection('Digital')"> Digital Painting</button>
+    <button class="btn" onclick="filterSelection('Traditional')"> Traditional 2D</button>
+  </div>
+
 <!--Portfolio Section-->
 <div class='container portfolio-section'>
     <section>
-        <h2>Portfolio</h2>
+        <!--<h2><a href="Portfolio subpage.html">Portfolio</a></h2>-->
         <div class='grid3'>
-            <a class='duplicateThisTag' href="heart subpage.html">
+            <div class="filterDiv Digital">
+                <a class='duplicateThisTag' href="heart subpage.html">
                 <div class="portfolio-image backgroundFix"
-                    style='background-image: url(Heart-01.png)'>
+                    style='background-image: url(heart_WIP.gif)'>
                 </div>
             <h3 class="bold">A Look inside the Left Ventricle of the Human Heart</h3>
             <p>
@@ -128,6 +189,167 @@ function myFunction() {
                 of the human heart.  
             </p>
             </a>
+        </div>
+        <div class="filterDiv 3D Interactive">
+            <a class='duplicateThisTag' href="Crab Game.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(crab\ game_thumbnail.png)'>
+                </div>
+            <h3 class="bold">3D Platformer Game Test</h3>
+            <p>
+               Using 3D model assets that are self-created, I created a 3D platformer game in Unity as a personal project. The 
+               aim was to challenge myself in learning a new program entirely on my own. Then learning how to export it into WebGl 
+               so it can be shared on a webpage. 
+            </p>
+            </a>
+        </div>
+        <div class="filterDiv Digital"> 
+            <a class='duplicateThisTag' href="Neuroanatomy Self Portrait.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(Brain_colored.gif)'>
+                </div>
+            <h3 class="bold">Neuroanatomy Self Portrait</h3>
+            <p>
+                This digital illustration of myself with a view into the skull to reveal brain anatomy. 
+                It is less of a diadatic teaching piece, but an editorial piece. 
+            </p>
+            </a>
+        </div>
+        <div class="filterDiv 3D">
+            <a class='duplicateThisTag' href="bee.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(J_Chasingthe_nosignature.jpg)'>
+                </div>
+            <h3 class="bold">Chasing the Key to Longevity</h3>
+            <p>
+                This editorial piece highlights the research published about how queen bees live longer 
+                than worker bees based on the royal honey they are fed as larvae.  
+            </p>
+            </a>
+            </div>
+            <div class="filterDiv Digital">
+            <a class='duplicateThisTag' href="brain arteries.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(Brain\ Artery.gif)'>
+                </div>
+            <h3 class="bold">Arterial Blood Supply to the Brain</h3>
+            <p>
+                The challenge of this piece was to create a unique educational piece teaching about something
+                we personally find challenging to learn about neuroanatomy. 
+            </p>
+            </a>
+            </div>
+            <div class="filterDiv Traditional">
+            <a class='duplicateThisTag' href="Brodel heart subpage.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(Heart.JPG)'>
+                </div>
+            <h3 class="bold">Studying the Masters: Learning from Max Brödel's Heart Sketch</h3>
+            <p>
+                Through the act of replication, one can observe more finely a master's work. By 
+                studying Max Brödel's "Winternitz-Pulmonary Anuersym" sketch I was able to 
+                intensely observe his use of line and tone to replicate the different textures found
+                on a human heart. 
+            </p>
+            </a>
+            </div>
+            <div class="filterDiv Traditional">
+            <a class='duplicateThisTag' href="Skull.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(Skull.png)'>
+                </div>
+            <h3 class="bold">Anteriolateral View of the Human Skull</h3>
+            <p>
+                Carbon dust illustration of the human skull taken from an anteriolaterial
+                view. Primary audience would be students who wish to learn about the external
+                anatomical features of the human skull. 
+            </p>
+            </a>
+            </div>
+            <div class="filterDiv 3D">
+            <a class='duplicateThisTag' href="covid protease.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(covid_protease.png)'>
+                </div>
+            <h3 class="bold">Covid Protease Inhibitor</h3>
+            <p>
+                Two page spread intended for a magazine such as Scientific American that 
+                describes a biomolecular process. 
+            </p>
+            </a>
+            </div>
+            <div class="filterDiv Traditional">
+            <a class='duplicateThisTag' href="Half head.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(Cut_Head.png)'>
+                </div>
+            <h3 class="bold">Cranial Cavities</h3>
+            <p>
+                Digital illustration showing the cranial cavities. Based off of direct observation
+                of a real perserved human head cut in half at the Grant's Library at University of Toronto.
+            </p>
+            </a>
+            </div>
+            <div class="filterDiv Digital">
+            <a class='duplicateThisTag' href="surgical illustrations.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(Surgical_Illustration_1-08.png)'>
+                </div>
+            <h3 class="bold">Ligament Reconstruction and Tendon Interposition (LRTI) for Thumb CMC Arthritis</h3>
+            <p>
+                After observing the surgical procedure and doing further research, we were focused on creating
+                effective visual storytelling to explain the surgical procedure. 
+            </p>
+            </a>
+            </div>
+
+            <div class="filterDiv Interactive Digital">
+            <a class='duplicateThisTag' href="spider.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(spider.jpg)'>
+                </div>
+            <h3 class="bold">Peacock Spider Website Prototype</h3>
+            <p>
+                Website mockup in Figma describing the peacock spider. 
+            </p>
+            </a>
+            </div>
+            <div class="filterDiv Interactive">
+            <a class='duplicateThisTag' href="tableau.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(dataviz2.png)'>
+                </div>
+            <h3 class="bold">Relationship between Employment and Health Insurance Coverage</h3>
+            <p>
+                Interactive Tableau data visualization using US Census data to explore the relationship
+                between employment and health insurance coverage. 
+            </p>
+            </a>
+            </div>
+            <div class="filterDiv Traditional">
+            <a class='duplicateThisTag' href="sketchbook.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(Sketchbook_Skull.png)'>
+                </div>
+            <h3 class="bold">Sketchbook</h3>
+            <p>
+                A selection of sketches that are unrelated to projects, but practice for life drawing. 
+                And potentially playing around with composition and layout. 
+            </p>
+            </a>
+            </div>
+            <div class="filterDiv Traditional Digital">
+            <a class='duplicateThisTag' href="Miscellaneous.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(Gouache_Hands.jpg)'>
+                </div>
+            <h3 class="bold">Miscellaneous</h3>
+            <p>
+                Other pieces that do not fall into any specific categories. 
+            </p>
+            </a>
+            </div>
+            
         </div>
     </section>
 </div>
