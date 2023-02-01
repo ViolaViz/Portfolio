@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+	<head>
+		<meta charset= "UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Viola Yu's Art Portfolio: Heart Subpage"
+			/>
+			<meta
+				name="keywords"
+				content="Viola Yu, Viola, Portfolio website, viola yu's portfolio, art portfolio website, biomedical communicator, biomedical visualizer"
+			/>
+			<meta name="author" content="Viola Yu" />
+			<link
+				href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+				rel="stylesheet"
+			/>
+			<link rel="stylesheet" href="index.css" />
+			<title> Viola's Portfolio- Bee </title> 
+		</head>
+		<body>
+<!--Contact Section, And Navigation and Footer-->
+<!--<nav class='padChild topHeader'>
+	<div class='flex-space-btw'>
+		<a class="centered logo"><img src="images/Yu_logo-01.svg" class="logo"></img></a>
+		<a href='mailto:vy33@cornell.edu' class='centered'>vy33@cornell.edu
+			<img src='images/linkIcon.svg' class='icon'></img></a>
+	</div>
+	</nav>-->
+
+    <!--sticky nav bar attempt-->
+
+    <div id="navbar">
+        <nav class='padChild header'>
+            <div class='flex-space-btw'>
+        <a class="centered logo"><img src="images/Yu_logo-01.svg" class="logo"></img></a>
+        <div class="header-right"> 
+            <a href="index.html" class='centered'>Home</a>
+            <a href="Portfolio subpage.html" class='centered'>Portfolio</a>
+        <a href="Resume subpage.html" class="centered">CV</a>
+        </div>
+    </div>
+    </div>
+        </nav>
+    </div>
+    </nav>
+<!--JavaScript for sticky nav bar-->
+
+<script>  
+  // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script> 
+
+<!--About Section-->
+<div class='container'>
+	<section class='grid2 aboutSection'>
+		<div class='centered'>
+            <div><img src="/images/Gouache_Hands.jpg" alt="Heart"  ></div>  
+	</div>
+    <div>
+        <h2>Miscellaneous</h2>
+        <p class='paragraph'> These pieces are miscellaneous. They vary from traditional paintings and drawings
+            to digital paintings and 3D models. 
+            <br><br>
+            This specific piece is a gouche sketch of my hands done from life. The main focus is accurately depicting
+            the skin undertones.  
+            
+        </p>
+</div>  
+            <div>
+				<h2>BioSci Card: Chinchilla</h2>
+				<p class='paragraph'> The purpose of this piece was to create a playing card that shows a unique ability 
+                    that an organism is capable of. Think of Pokémon cards combined with National Geographics. So I chose 
+                    to do Chinchilla and their ability to release chunks of fur to quickly escape predators. 
+                </p>
+		</div>
+        <div><img src="/images/BioSci_Card_combined.png" alt="Heart Sketchbook"  ></div>
+
+        <div>
+            <h2> Exploring Tension in Hands </h2>
+            <p class='paragraph'> This piece was an exploration on tension in hand and how it deforms the skin and 
+                their coloration as well.
+            </p>
+    </div> <div><img src="/images/Clench.jpg" alt="Heart 3D Maquette" width="500px" ></div>
+        <div>
+            <h2>Charcoal Figures</h2>
+            <p class='paragraph'>  These pieces done in charcoal was to investigate the human figure and their unerlying
+                anatomy that can be viewed through skin. 
+            </p>
+    </div> <div><img src="/images/Charcoal_Figures_combined.png" alt="Heart WIP Gif"  ></div>
+
+<div>
+    <h2> Oil Paintings from Life</h2>
+    <p class='paragraph'> These still lifes oil paintings were an exploration in different textures and how light plays 
+        off them. I wanted to explore with the transparency and distortion of glass and then the different textures found 
+        within a partially peeled clemetine. 
+    </p>
+</div> <div><img src="/images/oil_paintings_combined.png" alt="Heart WIP Gif"  ></div>
+<div>
+    <h2>Cleaning up CT Scan for 3D</h2>
+    <p class='paragraph'> Using CT scan data of a red panda skull, I practiced cleaning up this extracted model 
+        in ZBrush and rendering it C4D. 
+    </p>
+</div> <div><img src="/images/3D_Skull.png" alt="Heart WIP Gif"  ></div>
+
+</div>
+</section>
+</div> 
+</div>
+
+<!--Portfolio Section-->
+<div class='container portfolio-section'>
+    <section>
+        <h2>Portfolio</h2>
+        <div class='grid3'>
+            <a class='duplicateThisTag' href="heart subpage.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(images/Heart-01.png)'>
+                </div>
+            <h3 class="bold">A Look inside the Left Ventricle of the Human Heart</h3>
+            <p>
+                The goal of this illustration was to create an unique educational illustration
+                that informs the viewer of important external and internal anatomical features 
+                of the human heart.  
+            </p>
+            </a>
+        </div>
+    </section>
+</div>
+<!--Experience Section-->
+<div class='container experience-section'>
+    <section>
+        <h2>Publications</h2>
+            <div class='flex-wrap'>
+                <div class='duplicateThisDiv'>
+                    <a href="https://thejns.org/caselessons/view/journals/j-neurosurg-case-lessons/5/3/article-CASE22440.xml" class="accentColor bold">Illustration Published in Journal of Neurosurgery 
+                        <img src="images/linkIcon.svg" class="icon"></img>
+                    </a>
+                    <p>Illustration published in article "Transorbital penetrating head injury with a favorable outcome:
+                        illustrative case." 
+                    </p>
+                    <p>2023</p>
+                </div>
+                <div class='duplicateThisDiv'>
+                    <a href="https://pubs.acs.org/doi/10.1021/acs.analchem.0c04412" class="accentColor bold">Figure Published in Analytical Chemistry
+                        <img src="images/linkIcon.svg" class="icon"></img>
+                    </a>
+                    <p>Graphic figure published in article "Detection and Characterization of Vesicular Gangliosides Binding to 
+                        Myelin-Associated Glycoprotein on Supported Lipid Bilayers"
+                    </p>
+                    <p>2020</p>
+                </div>
+            <a href="Resume subpage.html" class="accentColor bold resume">View resume
+                <img src="images/linkIcon.svg" class="icon"></img></a>
+            </div>
+    </section>
+</div>
+
+
+<!--Footer-->
+<footer class='padChild topHeader'>
+	<div class='flex-space-btw'>
+		<a href='https://www.instagram.com/violayu.viz/' class='centered'><img src="images/Instagram-logo-transparent-PNG.png" class="icon"></img> <b>@violayu.viz</b></a>
+		<a href='mailto:vy33@cornell.edu' class='centered'>vy33@cornell.edu
+			<img src='images/linkIcon.svg' class='icon'></img></a>
+	</div>
+</footer>
+		</body>
+	</html>
