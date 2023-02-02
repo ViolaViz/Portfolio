@@ -327,7 +327,7 @@ section{
   line-height: 100px;
   text-align: auto
   margin: 2px;
-  display: none; /* Hidden by default */
+  display:; /* Hidden by default */
 }
 
 /* The "show" class is added to the filtered elements */
