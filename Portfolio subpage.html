@@ -59,6 +59,17 @@ navbar.classList.remove("sticky");
 }
 </script> 
 
+<!-- Control buttons -->
+<div class="container portfolio-section"><h2><a href="Portfolio subpage.html">Portfolio</a></h2></div>
+<div class='container portfolio-section' id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('3D')"> 3D Work</button>
+    <button class="btn" onclick="filterSelection('Interactive')"> Interactive</button>
+    <button class="btn" onclick="filterSelection('Digital')"> Digital Painting</button>
+    <button class="btn" onclick="filterSelection('Traditional')"> Traditional 2D</button>
+  </div>
+  
+ 
 <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
 <script> filterSelection("all")
     function filterSelection(c) {
@@ -108,16 +119,6 @@ navbar.classList.remove("sticky");
       });
     }
     </script>
-
-<!-- Control buttons -->
-<div class="container portfolio-section"><h2><a href="Portfolio subpage.html">Portfolio</a></h2></div>
-<div class='container portfolio-section' id="myBtnContainer">
-    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-    <button class="btn" onclick="filterSelection('3D')"> 3D Work</button>
-    <button class="btn" onclick="filterSelection('Interactive')"> Interactive</button>
-    <button class="btn" onclick="filterSelection('Digital')"> Digital Painting</button>
-    <button class="btn" onclick="filterSelection('Traditional')"> Traditional 2D</button>
-  </div>
 
 <!--Portfolio Section-->
 <div class='container portfolio-section'>
