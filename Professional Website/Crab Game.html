@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+	<head>
+		<meta charset= "UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Viola Yu's Art Portfolio: Crab Game Subpage"
+			/>
+			<meta
+				name="keywords"
+				content="Viola Yu, Viola, Portfolio website, viola yu's portfolio, art portfolio website, biomedical communicator, biomedical visualizer"
+			/>
+			<meta name="author" content="Viola Yu" />
+			<link
+				href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+				rel="stylesheet"
+			/>
+			<link rel="stylesheet" href="index.css" />
+			<title> Viola's Portfolio-Crab in My Bed Game </title> 
+		</head>
+		<body>
+<!--Contact Section, And Navigation and Footer-->
+<!--<nav class='padChild topHeader'>
+	<div class='flex-space-btw'>
+		<a class="centered logo"><img src="images/Yu_logo-01.svg" class="logo"></img></a>
+		<a href='mailto:vy33@cornell.edu' class='centered'>vy33@cornell.edu
+			<img src='images/linkIcon.svg' class='icon'></img></a>
+	</div>
+	</nav>-->
+
+    <!--sticky nav bar attempt-->
+
+    <div id="navbar">
+        <nav class='padChild header'>
+            <div class='flex-space-btw'>
+        <a class="centered logo"><img src="images/Yu_logo-01.svg" class="logo"></img></a>
+        <div class="header-right"> 
+            <a href="index.html" class='centered'>Home</a>
+            <a href="Portfolio subpage.html" class='centered'>Portfolio</a>
+        <a href="Resume subpage.html" class="centered">CV</a>
+        </div>
+    </div>
+    </div>
+        </nav>
+    </div>
+    </nav>
+<!--JavaScript for sticky nav bar-->
+
+<script>  
+  // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script> 
+
+<!--About Section-->
+<div class='container'>
+            <section class='grid2 aboutSection'>
+		<div class='centered'>
+            <iframe mozallowfullscreen="true" allow="autoplay; fullscreen"  src="https://violaviz.github.io/Crab-Bedroom-Game/" 
+                style="border:0px #000000 none;" name="Crab in my Bed" scrolling="no" msallowfullscreen="true" allowfullscreen="true" webkitallowfullscreen="true" 
+                allowtransparency="true" frameborder="0" marginheight="px" marginwidth="320px" height="500px" width="100%"></iframe> 
+	</div>
+    <div>
+        <h2>3D Platformer Game Test</h2>
+        <p class='paragraph'> The purpose of this personal project is to use 3D models that I have created to make a 3D platformer 
+            game on Unity and upload it to a website by exporting it as WebGl. To move the crab, first click on the game box to ensure
+            you are within the game. Then use "spacebar" to jump and the "up","down","left","right" arrow keys to move back, forward, left,
+            and right respectively. 
+            <br><br>
+            Continue reading to learn about the process that went into creating this piece. 
+        </p>
+</div>  
+            <div>
+				<h2>Research and Sketch the Crab</h2>
+				<p class='paragraph'> After some research about the anatomical features of the fiddler crab (Minuca pugnax), reference 
+                    photos were found and their morphology was examined via sketches. I tried to ensure that I got all angles of the crab 
+                    as I will be using these images to help me model. 
+                </p>
+		</div>
+        <div><img src="/images/Crab sketches.jpg" alt="crab sketches"  ></div>
+
+        <div>
+            <h2>Rough Model the Crab</h2>
+            <p class='paragraph'> Using Nomad Sculpt, I roughly modeled out the crabs from a sphere.
+               
+            </p>
+    </div> <div><img src="/images/Female_crab_model.PNG" alt="female crab model"  ></div>
+        <div>
+            <h2>Refine Model</h2>
+            <p class='paragraph'>Next I took the rough model from Nomad Sculpt, and combined the subtools. I then imported the obj model
+                to ZBrush where I remeshed, UV wrapped, decimated, and projected details onto the model. The details I added included the hair on the frontal 
+                carapace and legs, and the bumpy texture that can be found on the claws and top of the carapace. This photo shows the two crab models, 
+                male and female, 3D printed. 
+            </p>
+    </div> <div><img src="/images/crabs_printed.jpg" alt="printed crabs" width="500px" ></div>
+        <div>
+            <h2>Final Render of Crab Models</h2>
+            <p class='paragraph'> After projecting details onto the crab, the models were polypainted to represent the colors typically found on
+                these species. The models were then exported out of ZBrush and imported into Cinema 4D. In C4D, a physical environment was created 
+                via displacement maps and textures downlowded from free sites such as polyhaven. Then using Octane scatter of built in 3D models of grass
+                and the crab models I created an environment reminiscent of their nature environment, salt marshes. After placing some HDRi for lighting 
+                and playing around with physical lights, a final render was created. 
+                <br><br>
+                Wanting to reuse this model for something interactive, I decided to create an environment for a game. 
+            </p>
+    </div> <div><img src="/images/crabs.png" alt="crab final render"  ></div>
+    <div>
+        <h2>Model the Bedroom</h2>
+        <p class='paragraph'> In Blender, I created the bedroom. 
+        </p>
+</div> <div><img src="/images/Bedroom.png" alt="bedroom model"  ></div>
+<div>
+    <h2>Render the Bedroom</h2>
+    <p class='paragraph'> In Blender, I added lights to mimic moonlight coming from the window and light emitting from the 
+        lamp. Then rendered it out using playblast. Please note the figure head in the bed was created by a classmate as we used 
+        this bedroom environment for another project (<a href='https://vesaliustrust.org/upcoming-events/trustathon-2022/6-cess/' class="accentColor bold">Floresta</a>- an interactive game educating users on the benefits of sleep created 
+        as a team for the Versalius Trust-a-Thon). 
+    </p>
+</div> <div><img src="/images/Start_Page7.png" alt="bedroom model rendered"  ></div>
+<div>
+    <h2>Put it All Together in Unity</h2>
+    <p class='paragraph'> I imported the crab and bedroom objects into Unity. Then added many components such as rigidbody, collider, 
+        and a C# script to allow the crab object to move when keys are pressed. This game file was then exported as WebGl and placed
+        in GitHub so it can be hosted on a webpage for all the access. As I continue to work on this project, I will look into how to 
+        import textures for the objects, and how to create a start page for the game that allows the player to reset. It would also be 
+        and added bonus if there was a way to control the camera angle as a user of this game. 
+    </p>
+</div> <div><img src="/images/Crab Unity.png" alt="crab unity game"  ></div>
+</div>
+</section>
+</div> 
+</div>
+<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+<script> filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    // Show filtered elements
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += " " + arr2[i];
+        }
+      }
+    }
+    
+    // Hide elements that are not selected
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1); 
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    // Add active class to the current control button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+
+<!-- Control buttons -->
+<div class="container portfolio-section"><h2><a href="Portfolio subpage.html">Portfolio</a></h2></div>
+<div class='container portfolio-section' id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('3D')"> 3D Work</button>
+    <button class="btn" onclick="filterSelection('Interactive')"> Interactive</button>
+    <button class="btn" onclick="filterSelection('Digital')"> Digital Painting</button>
+    <button class="btn" onclick="filterSelection('Traditional')"> Traditional 2D</button>
+  </div>
+
+<!--Portfolio Section-->
+<div class='container portfolio-section'>
+    <section>
+        <!--<h2><a href="Portfolio subpage.html">Portfolio</a></h2>-->
+        <div class='grid3'>
+            <div class="filterDiv Digital">
+                <a class='duplicateThisTag' href="heart subpage.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(images/heart_WIP.gif)'>
+                </div>
+            <h3 class="bold">A Look inside the Left Ventricle of the Human Heart</h3>
+            <p>
+                The goal of this illustration was to create an unique educational illustration
+                that informs the viewer of important external and internal anatomical features 
+                of the human heart.  
+            </p>
+            </a>
+        </div>
+        <div class="filterDiv 3D Interactive">
+            <a class='duplicateThisTag' href="Crab Game.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(images/crab\ game_thumbnail.png)'>
+                </div>
+            <h3 class="bold">3D Platformer Game Test</h3>
+            <p>
+               Using 3D model assets that are self-created, I created a 3D platformer game in Unity as a personal project. The 
+               aim was to challenge myself in learning a new program entirely on my own. Then learning how to export it into WebGl 
+               so it can be shared on a webpage. 
+            </p>
+            </a>
+        </div>
+        <div class="filterDiv Digital"> 
+            <a class='duplicateThisTag' href="Neuroanatomy Self Portrait.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(images/Brain_colored.gif)'>
+                </div>
+            <h3 class="bold">Neuroanatomy Self Portrait</h3>
+            <p>
+                This digital illustration of myself with a view into the skull to reveal brain anatomy. 
+                It is less of a diadatic teaching piece, but an editorial piece. 
+            </p>
+            </a>
+        </div>
+        <div class="filterDiv 3D">
+            <a class='duplicateThisTag' href="bee.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(images/J_Chasingthe_nosignature.jpg)'>
+                </div>
+            <h3 class="bold">Chasing the Key to Longevity</h3>
+            <p>
+                This editorial piece highlights the research published about how queen bees live longer 
+                than worker bees based on the royal honey they are fed as larvae.  
+            </p>
+            </a>
+            </div>
+            <div class="filterDiv Digital">
+            <a class='duplicateThisTag' href="brain arteries.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(images/Brain\ Artery.gif)'>
+                </div>
+            <h3 class="bold">Arterial Blood Supply to the Brain</h3>
+            <p>
+                The challenge of this piece was to create a unique educational piece teaching about something
+                we personally find challenging to learn about neuroanatomy. 
+            </p>
+            </a>
+            </div>
+            <div class="filterDiv Traditional">
+            <a class='duplicateThisTag' href="Brodel heart subpage.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(images/Heart.JPG)'>
+                </div>
+            <h3 class="bold">Studying the Masters: Learning from Max Brödel's Heart Sketch</h3>
+            <p>
+                Through the act of replication, one can observe more finely a master's work. By 
+                studying Max Brödel's "Winternitz-Pulmonary Anuersym" sketch I was able to 
+                intensely observe his use of line and tone to replicate the different textures found
+                on a human heart. 
+            </p>
+            </a>
+            </div>
+            <div class="filterDiv Traditional">
+            <a class='duplicateThisTag' href="Skull.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(images/Skull.png)'>
+                </div>
+            <h3 class="bold">Anteriolateral View of the Human Skull</h3>
+            <p>
+                Carbon dust illustration of the human skull taken from an anteriolaterial
+                view. Primary audience would be students who wish to learn about the external
+                anatomical features of the human skull. 
+            </p>
+            </a>
+            </div>
+            <div class="filterDiv 3D">
+            <a class='duplicateThisTag' href="covid protease.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(images/covid_protease.png)'>
+                </div>
+            <h3 class="bold">Covid Protease Inhibitor</h3>
+            <p>
+                Two page spread intended for a magazine such as Scientific American that 
+                describes a biomolecular process. 
+            </p>
+            </a>
+            </div>
+            <div class="filterDiv Traditional">
+            <a class='duplicateThisTag' href="Half head.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(images/Cut_Head.png)'>
+                </div>
+            <h3 class="bold">Cranial Cavities</h3>
+            <p>
+                Digital illustration showing the cranial cavities. Based off of direct observation
+                of a real perserved human head cut in half at the Grant's Library at University of Toronto.
+            </p>
+            </a>
+            </div>
+            <div class="filterDiv Digital">
+            <a class='duplicateThisTag' href="surgical illustrations.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(images/Surgical_Illustration_1-08.png)'>
+                </div>
+            <h3 class="bold">Ligament Reconstruction and Tendon Interposition (LRTI) for Thumb CMC Arthritis</h3>
+            <p>
+                After observing the surgical procedure and doing further research, we were focused on creating
+                effective visual storytelling to explain the surgical procedure. 
+            </p>
+            </a>
+            </div>
+
+            <div class="filterDiv Interactive Digital">
+            <a class='duplicateThisTag' href="spider.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(images/spider.jpg)'>
+                </div>
+            <h3 class="bold">Peacock Spider Website Prototype</h3>
+            <p>
+                Website mockup in Figma describing the peacock spider. 
+            </p>
+            </a>
+            </div>
+            <div class="filterDiv Interactive">
+            <a class='duplicateThisTag' href="tableau.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(images/dataviz2.png)'>
+                </div>
+            <h3 class="bold">Relationship between Employment and Health Insurance Coverage</h3>
+            <p>
+                Interactive Tableau data visualization using US Census data to explore the relationship
+                between employment and health insurance coverage. 
+            </p>
+            </a>
+            </div>
+            <div class="filterDiv Traditional">
+            <a class='duplicateThisTag' href="sketchbook.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(images/Sketchbook_Skull.png)'>
+                </div>
+            <h3 class="bold">Sketchbook</h3>
+            <p>
+                A selection of sketches that are unrelated to projects, but practice for life drawing. 
+                And potentially playing around with composition and layout. 
+            </p>
+            </a>
+            </div>
+            <div class="filterDiv Traditional Digital">
+            <a class='duplicateThisTag' href="Miscellaneous.html">
+                <div class="portfolio-image backgroundFix"
+                    style='background-image: url(images/Gouache_Hands.jpg)'>
+                </div>
+            <h3 class="bold">Miscellaneous</h3>
+            <p>
+                Other pieces that do not fall into any specific categories. 
+            </p>
+            </a>
+            </div>
+            
+        </div>
+    </section>
+</div>
+<!--Experience Section-->
+<div class='container experience-section'>
+    <section>
+        <h2>Publications</h2>
+            <div class='flex-wrap'>
+                <div class='duplicateThisDiv'>
+                    <a href="https://thejns.org/caselessons/view/journals/j-neurosurg-case-lessons/5/3/article-CASE22440.xml" class="accentColor bold">Illustration Published in Journal of Neurosurgery 
+                        <img src="images/linkIcon.svg" class="icon"></img>
+                    </a>
+                    <p>Illustration published in article "Transorbital penetrating head injury with a favorable outcome:
+                        illustrative case." 
+                    </p>
+                    <p>2023</p>
+                </div>
+                <div class='duplicateThisDiv'>
+                    <a href="https://pubs.acs.org/doi/10.1021/acs.analchem.0c04412" class="accentColor bold">Figure Published in Analytical Chemistry
+                        <img src="images/linkIcon.svg" class="icon"></img>
+                    </a>
+                    <p>Graphic figure published in article "Detection and Characterization of Vesicular Gangliosides Binding to 
+                        Myelin-Associated Glycoprotein on Supported Lipid Bilayers"
+                    </p>
+                    <p>2020</p>
+                </div>
+            <a href="Resume subpage.html" class="accentColor bold resume">View resume
+                <img src="images/linkIcon.svg" class="icon"></img></a>
+            </div>
+    </section>
+</div>
+
+
+<!--Footer-->
+<footer class='padChild topHeader'>
+	<div class='flex-space-btw'>
+		<a href='https://www.instagram.com/violayu.viz/' class='centered'><img src="images/Instagram-logo-transparent-PNG.png" class="icon"></img> <b>@violayu.viz</b></a>
+		<a href='mailto:vy33@cornell.edu' class='centered'>vy33@cornell.edu
+			<img src='images/linkIcon.svg' class='icon'></img></a>
+	</div>
+</footer>
+		</body>
+	</html>
