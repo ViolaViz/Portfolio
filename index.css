@@ -167,7 +167,7 @@ section{
 /* Sticky Nav bar attempt */
 #navbar {
     overflow: hidden;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255); opacity: 0.9;
 }
 
 /* Navbar links */
