@@ -171,7 +171,7 @@ navbar.classList.remove("sticky");
 <div class="container portfolio-section"><h2><a href="Portfolio subpage.html">Portfolio</a></h2></div>
 
  <div class="container portfolio-section" id="myBtnContainer">
-    <button class="btn active" onload="filterSelection('all')"> Show all</button>
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
     <button class="btn" onclick="filterSelection('3D')"> 3D Work</button>
     <button class="btn" onclick="filterSelection('Interactive')"> Interactive</button>
     <button class="btn" onclick="filterSelection('Digital')"> Digital Painting</button>
@@ -217,6 +217,7 @@ navbar.classList.remove("sticky");
     }
     
     // Add active class to the current control button (highlight it)
+    window.onload = function () { filterSelection("all"); }
     var btnContainer = document.getElementById("myBtnContainer");
     var btns = btnContainer.getElementsByClassName("btn");
     for (var i = 0; i < btns.length; i++) {
