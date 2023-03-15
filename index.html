@@ -50,7 +50,7 @@
 <div id="navbar">
     <nav class='padChild header'>
         <div class='flex-space-btw'>
-    <a class="centered logo"><img src="Yu_logo-01.svg" class="logo"></img></a>
+    <a class="centered logo"><img src="images/Yu_logo-01.svg" class="logo"></img></a>
     <div class="header-right"> 
         <a href="index.html" class='centered'>Home</a>
         <a href="Portfolio subpage.html" class='centered'>Portfolio</a>
@@ -110,24 +110,73 @@ navbar.classList.remove("sticky");
                 <br>
                 <br>
                 Please feel free to reach out to me via email: <a href='mailto:vy33@cornell.edu' class="accentColor bold">vy33@cornell.edu
-                    <img src='linkIcon.svg' class='icon'></img></a> to chat! 
+                    <img src='images/linkIcon.svg' class='icon'></img></a> to chat! 
 			</p>
 		</div>
 	</div>
-	<div class='aboutImg backgroundFix' style="background-image: url(headshot1.png)"></div>
+	<div class='aboutImg backgroundFix' style="background-image: url(images/headshot1.png)"></div>
 </section>
 </div> 
+<!--Portfolio Gallery Test-->
+<!--<a id="portfolio"></a>
+<div class="portfolio">
+    <div class="container-wide"> 
+        <h1>
+            Portfolio 
+        </h1>
+    -->
+        <!--Portfolio Filter-->
+        <!--<div class="gallery-row">
+            <div class="filter-buttons">
+               <ul id="filter-btns">
+                <li data-target="all" class="active">All</li>
+                <li data-target="three-d" class>3D Work</li>
+                <li data-target="interactive" class>Interactive</li>
+                <li data-target="digital" class>Digital Painting</li>
+                <li data-target="traditional" class>Traditional 2D</li>
+               </ul> 
+            </div>
+        </div>
+    -->
+        <!--Gallery-->
+        <!--<div class="gallery-row">
+            <div class="portfolio-gallery">
+                <div class="item" data-id="digital" style="display: block;">
+                <a href="heart subpage.html">
+                    <div class="inner">
+                        <div class="card-description">enter description</div>
+                        <img src="images/heart_WIP.gif" alt="Heart digital painting"
+                        class="img-full-width">
+                    </div>
+                </a>
+            </div>
+            <div class="item" data-id="interactive, three-d" style="display: block;">
+                <a href="Crab Game.html">
+                    <div class="inner">
+                        <div class="card-description">enter description</div>
+                        <img src="images/crab game_thumbnail.png" alt="Crab game"
+                        class="img-full-width">
+                    </div>
+                </a>
+            </div>
 
+            </div>
+        </div>
+    </div>
+</div>
+-->
 <!-- Control buttons -->
+
+
 <div class="container portfolio-section"><h2><a href="Portfolio subpage.html">Portfolio</a></h2></div>
-<div class='container portfolio-section' id="myBtnContainer">
-    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+
+ <div class="container portfolio-section" id="myBtnContainer">
+    <button class="btn active" onload="filterSelection('all')"> Show all</button>
     <button class="btn" onclick="filterSelection('3D')"> 3D Work</button>
     <button class="btn" onclick="filterSelection('Interactive')"> Interactive</button>
     <button class="btn" onclick="filterSelection('Digital')"> Digital Painting</button>
     <button class="btn" onclick="filterSelection('Traditional')"> Traditional 2D</button>
-  </div>
-  
+</div>
  
 <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
 <script> filterSelection("all")
@@ -182,11 +231,13 @@ navbar.classList.remove("sticky");
 <!--Portfolio Section-->
 <div class='container portfolio-section'>
     <section>
-        <div class='grid3'>
-		<div class="filterDiv Digital">
-            <a class='duplicateThisTag' href="heart subpage.html">
+
+      <h2><a href="Portfolio subpage.html"></a></h2>
+       <div class='grid3'>
+            <div class="filterDiv Digital">
+                <a class='duplicateThisTag' href="heart subpage.html">
                 <div class="portfolio-image backgroundFix"
-                    style='background-image: url(heart_WIP.gif)'>
+                    style='background-image: url(images/heart_WIP.gif)'>
                 </div>
             <h3 class="bold">A Look inside the Left Ventricle of the Human Heart</h3>
             <p>
@@ -195,11 +246,11 @@ navbar.classList.remove("sticky");
                 of the human heart.  
             </p>
             </a>
-		</div>
-		<div class="filterDiv 3D Interactive">
+        </div>
+        <div class="filterDiv 3D Interactive">
             <a class='duplicateThisTag' href="Crab Game.html">
                 <div class="portfolio-image backgroundFix"
-                    style='background-image: url(crab\ game_thumbnail.png)'>
+                    style='background-image: url(images/crab\ game_thumbnail.png)'>
                 </div>
             <h3 class="bold">3D Platformer Game Test</h3>
             <p>
@@ -208,11 +259,11 @@ navbar.classList.remove("sticky");
                so it can be shared on a webpage. 
             </p>
             </a>
-		</div>
-		<div class="filterDiv Digital">
+        </div>
+        <div class="filterDiv Digital"> 
             <a class='duplicateThisTag' href="Neuroanatomy Self Portrait.html">
                 <div class="portfolio-image backgroundFix"
-                    style='background-image: url(Brain_colored.gif)'>
+                    style='background-image: url(images/Brain_colored.gif)'>
                 </div>
             <h3 class="bold">Neuroanatomy Self Portrait</h3>
             <p>
@@ -220,11 +271,11 @@ navbar.classList.remove("sticky");
                 It is less of a diadatic teaching piece, but an editorial piece. 
             </p>
             </a>
-		</div>
-		<div class="filterDiv 3D">
+        </div>
+        <div class="filterDiv 3D">
             <a class='duplicateThisTag' href="bee.html">
                 <div class="portfolio-image backgroundFix"
-                    style='background-image: url(J_Chasingthe_nosignature.jpg)'>
+                    style='background-image: url(images/J_Chasingthe_nosignature.jpg)'>
                 </div>
             <h3 class="bold">Chasing the Key to Longevity</h3>
             <p>
@@ -232,11 +283,11 @@ navbar.classList.remove("sticky");
                 than worker bees based on the royal honey they are fed as larvae.  
             </p>
             </a>
-		</div>
-		<div class="filterDiv Digital">
+            </div>
+            <div class="filterDiv Digital">
             <a class='duplicateThisTag' href="brain arteries.html">
                 <div class="portfolio-image backgroundFix"
-                    style='background-image: url(Brain\ Artery.gif)'>
+                    style='background-image: url(images/Brain\ Artery.gif)'>
                 </div>
             <h3 class="bold">Arterial Blood Supply to the Brain</h3>
             <p>
@@ -244,11 +295,11 @@ navbar.classList.remove("sticky");
                 we personally find challenging to learn about neuroanatomy. 
             </p>
             </a>
-		</div>
-		<div class="filterDiv Traditional">
+            </div>
+            <div class="filterDiv Traditional">
             <a class='duplicateThisTag' href="Brodel heart subpage.html">
                 <div class="portfolio-image backgroundFix"
-                    style='background-image: url(Heart.JPG)'>
+                    style='background-image: url(images/Heart.JPG)'>
                 </div>
             <h3 class="bold">Studying the Masters: Learning from Max Brödel's Heart Sketch</h3>
             <p>
@@ -258,11 +309,11 @@ navbar.classList.remove("sticky");
                 on a human heart. 
             </p>
             </a>
-		</div>
-		<div class="filterDiv Traditional">
+            </div>
+            <div class="filterDiv Traditional">
             <a class='duplicateThisTag' href="Skull.html">
                 <div class="portfolio-image backgroundFix"
-                    style='background-image: url(Skull.png)'>
+                    style='background-image: url(images/Skull.png)'>
                 </div>
             <h3 class="bold">Anteriolateral View of the Human Skull</h3>
             <p>
@@ -271,11 +322,11 @@ navbar.classList.remove("sticky");
                 anatomical features of the human skull. 
             </p>
             </a>
-		</div>
-		<div class="filterDiv 3D">
+            </div>
+            <div class="filterDiv 3D">
             <a class='duplicateThisTag' href="covid protease.html">
                 <div class="portfolio-image backgroundFix"
-                    style='background-image: url(covid_protease.png)'>
+                    style='background-image: url(images/covid_protease.png)'>
                 </div>
             <h3 class="bold">Covid Protease Inhibitor</h3>
             <p>
@@ -283,11 +334,11 @@ navbar.classList.remove("sticky");
                 describes a biomolecular process. 
             </p>
             </a>
-		</div>
-		<div class="filterDiv Digital">
+            </div>
+            <div class="filterDiv Traditional">
             <a class='duplicateThisTag' href="Half head.html">
                 <div class="portfolio-image backgroundFix"
-                    style='background-image: url(Cut_Head.png)'>
+                    style='background-image: url(images/Cut_Head.png)'>
                 </div>
             <h3 class="bold">Cranial Cavities</h3>
             <p>
@@ -295,12 +346,11 @@ navbar.classList.remove("sticky");
                 of a real perserved human head cut in half at the Grant's Library at University of Toronto.
             </p>
             </a>
-		</div>
-            
+            </div>
             <div class="filterDiv Digital">
             <a class='duplicateThisTag' href="surgical illustrations.html">
                 <div class="portfolio-image backgroundFix"
-                    style='background-image: url(Surgical_Illustration_1-08.png)'>
+                    style='background-image: url(images/Surgical_Illustration_1-08.png)'>
                 </div>
             <h3 class="bold">Ligament Reconstruction and Tendon Interposition (LRTI) for Thumb CMC Arthritis</h3>
             <p>
@@ -308,22 +358,23 @@ navbar.classList.remove("sticky");
                 effective visual storytelling to explain the surgical procedure. 
             </p>
             </a>
-		</div>
+            </div>
+
             <div class="filterDiv Interactive Digital">
             <a class='duplicateThisTag' href="spider.html">
                 <div class="portfolio-image backgroundFix"
-                    style='background-image: url(spider.jpg)'>
+                    style='background-image: url(images/spider.jpg)'>
                 </div>
             <h3 class="bold">Peacock Spider Website Prototype</h3>
             <p>
-                Website mockup in Figma describing the peacock spider.  
+                Website mockup in Figma describing the peacock spider. 
             </p>
             </a>
-		</div>
-		<div class="filterDiv Interactive">
+            </div>
+            <div class="filterDiv Interactive">
             <a class='duplicateThisTag' href="tableau.html">
                 <div class="portfolio-image backgroundFix"
-                    style='background-image: url(dataviz2.png)'>
+                    style='background-image: url(images/dataviz2.png)'>
                 </div>
             <h3 class="bold">Relationship between Employment and Health Insurance Coverage</h3>
             <p>
@@ -331,11 +382,11 @@ navbar.classList.remove("sticky");
                 between employment and health insurance coverage. 
             </p>
             </a>
-		</div>
-		<div class="filterDiv Traditional">
+            </div>
+            <div class="filterDiv Traditional">
             <a class='duplicateThisTag' href="sketchbook.html">
                 <div class="portfolio-image backgroundFix"
-                    style='background-image: url(Sketchbook_Skull.png)'>
+                    style='background-image: url(images/Sketchbook_Skull.png)'>
                 </div>
             <h3 class="bold">Sketchbook</h3>
             <p>
@@ -343,21 +394,22 @@ navbar.classList.remove("sticky");
                 And potentially playing around with composition and layout. 
             </p>
             </a>
-		</div>
-		<div class="filterDiv Traditional Digital">
+            </div>
+            <div class="filterDiv Traditional Digital">
             <a class='duplicateThisTag' href="Miscellaneous.html">
                 <div class="portfolio-image backgroundFix"
-                    style='background-image: url(Gouache_Hands.jpg)'>
+                    style='background-image: url(images/Gouache_Hands.jpg)'>
                 </div>
             <h3 class="bold">Miscellaneous</h3>
             <p>
-               Other pieces that do not fall into any specific categories
+                Other pieces that do not fall into any specific categories. 
             </p>
             </a>
-           
+            </div>
+            
         </div>
     </section>
-</div>
+</div> 
 <!--Experience Section-->
 <div class='container experience-section'>
     <section>
@@ -365,7 +417,7 @@ navbar.classList.remove("sticky");
             <div class='flex-wrap'>
                 <div class='duplicateThisDiv'>
                     <a href="https://thejns.org/caselessons/view/journals/j-neurosurg-case-lessons/5/3/article-CASE22440.xml" class="accentColor bold">Illustration Published in Journal of Neurosurgery 
-                        <img src="linkIcon.svg" class="icon"></img>
+                        <img src="images/linkIcon.svg" class="icon"></img>
                     </a>
                     <p>Illustration published in article "Transorbital penetrating head injury with a favorable outcome:
                         illustrative case." 
@@ -374,7 +426,7 @@ navbar.classList.remove("sticky");
                 </div>
                 <div class='duplicateThisDiv'>
                     <a href="https://pubs.acs.org/doi/10.1021/acs.analchem.0c04412" class="accentColor bold">Figure Published in Analytical Chemistry
-                        <img src="linkIcon.svg" class="icon"></img>
+                        <img src="images/linkIcon.svg" class="icon"></img>
                     </a>
                     <p>Graphic figure published in article "Detection and Characterization of Vesicular Gangliosides Binding to 
                         Myelin-Associated Glycoprotein on Supported Lipid Bilayers"
@@ -382,16 +434,18 @@ navbar.classList.remove("sticky");
                     <p>2020</p>
                 </div>
             <a href="Resume subpage.html" class="accentColor bold resume">View resume
-                <img src="linkIcon.svg" class="icon"></img></a>
+                <img src="images/linkIcon.svg" class="icon"></img></a>
             </div>
     </section>
 </div>
+
+
 <!--Footer-->
 <footer class='padChild topHeader'>
 	<div class='flex-space-btw'>
-		<a href='https://www.instagram.com/violayu.viz/' class='centered'><img src="Instagram-logo-transparent-PNG.png" class="icon"></img> <b>@violayu.viz</b></a>
+		<a href='https://www.instagram.com/violayu.viz/' class='centered'><img src="images/Instagram-logo-transparent-PNG.png" class="icon"></img> <b>@violayu.viz</b></a>
 		<a href='mailto:vy33@cornell.edu' class='centered'>vy33@cornell.edu
-			<img src='linkIcon.svg' class='icon'></img></a>
+			<img src='images/linkIcon.svg' class='icon'></img></a>
 	</div>
 </footer>
 		</body>
